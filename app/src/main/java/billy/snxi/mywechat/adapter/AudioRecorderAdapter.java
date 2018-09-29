@@ -1,7 +1,6 @@
 package billy.snxi.mywechat.adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,7 +71,6 @@ public class AudioRecorderAdapter extends BaseAdapter {
         //设置录音条的长度
         ViewGroup.LayoutParams lp = holder.flayout_recorder_length.getLayoutParams();
         lp.width = getRecorderViewWidth(bean.getSeconds());
-        Log.d("AudioRecorderAdapter", "seconds:" + bean.getSeconds() + ", mScreenWidth:" + mScreenWidth + ", lp.width:" + lp.width);
         return convertView;
     }
 
