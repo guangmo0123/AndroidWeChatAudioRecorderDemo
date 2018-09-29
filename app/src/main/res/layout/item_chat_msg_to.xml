@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/tv_recorder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#797979"
+        android:text="2018-05-21 14:00:21"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <View
+            android:id="@+id/view_recorder_no_readed"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/flayout_recorder_length"
+            android:background="@drawable/shape_recorder_no_read_bg" />
+
+        <TextView
+            android:id="@+id/tv_recorder_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/flayout_recorder_length"
+            android:text="23'"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/flayout_recorder_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_icon"
+            android:background="@mipmap/chatto_bg_focused">
+
+            <View
+                android:id="@+id/view_voice_anim"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@mipmap/adj" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>
