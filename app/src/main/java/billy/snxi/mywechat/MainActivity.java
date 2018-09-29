@@ -25,7 +25,7 @@ import billy.snxi.mywechat.view.AudioRecorderButton;
 import billy.snxi.mywechat.view.MediaManager;
 
 /**
- * 一个仿微信的语音录入界面
+ * 一个仿微信的语音录入界面，并对语音聊天记录进行了增删改查等操作
  *
  * @author Billy
  */
