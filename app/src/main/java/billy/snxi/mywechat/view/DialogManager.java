@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import billy.snxi.mywechat.R;
 
+/**
+ * 录音时显示的dialog，用于提示用户当前状态，有如下几种状态：<br/>
+ * 正常录音（含动态更新音量等级的状态）、想要取消送法、录音时间太短
+ */
 public class DialogManager {
 
     //dialog
@@ -85,6 +89,7 @@ public class DialogManager {
      */
     public void updateVoiceLevel(int level) {
         if (mDialog != null && mDialog.isShowing()) {
+            //此处需要调用显示view，因为状态可能存在由：想要取消状态->正常录音状态
             mImageViewVoice.setVisibility(View.VISIBLE);
             //通过资源id的名称来反向查找资源的id
             int voiceResID = mContext.getResources().getIdentifier("v" + level,

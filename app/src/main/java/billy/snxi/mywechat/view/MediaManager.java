@@ -3,6 +3,10 @@ package billy.snxi.mywechat.view;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 
+/**
+ * 播放指定的录音文件<br/>
+ * 步骤：getInstance()->playSound()->pause() || reset()->release()
+ */
 public class MediaManager {
 
     private static MediaManager mInstance;

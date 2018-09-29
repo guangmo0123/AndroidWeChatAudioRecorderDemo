@@ -11,6 +11,9 @@ import android.widget.Button;
 
 import billy.snxi.mywechat.R;
 
+/**
+ * 自定义的录音按钮，长按此按钮可开始录音，并弹出相应的dialog提示
+ */
 public class AudioRecorderButton extends Button
         implements View.OnLongClickListener, AudioManager.AudioStateLintsener {
 

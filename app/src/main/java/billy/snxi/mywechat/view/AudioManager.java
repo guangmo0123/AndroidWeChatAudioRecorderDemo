@@ -5,6 +5,11 @@ import android.media.MediaRecorder;
 import java.io.File;
 import java.util.UUID;
 
+/**
+ * 对用户的语音进行录音等操作<br/>
+ * 因为需要Audio硬件的配合，因此需要对相应的资源进行初始化，最后还需要释放资源，因为此类资源属于独占模式<br/>
+ * 步骤：getInstance()->prepareAudio()->开始录音->getVoiceLevel()用于更新音量等级->release()->[cancel时:delete file]
+ */
 public class AudioManager {
     //音频控件
     private MediaRecorder mMediaRecorder;
